@@ -1,8 +1,8 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
-import userReducer from "./userReducer";
+import somgReducer from "./songReducer";
 
 const rootReducer = combineReducers({
-  user: userReducer,
+  songs: somgReducer,
 });
 
 const store = configureStore({
