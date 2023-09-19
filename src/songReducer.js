@@ -4,19 +4,13 @@ const initialState = {
 
 const songReducer = (state = initialState, action) => {
   switch (action.type) {
-    case "ADD_SONG":
-      return {
-        ...state,
-        user: action.payload,
-      };
+    case 'ADD_SONG':
+      return [...state, action.payload];
     case "REMOVE_SONG":
-      return {
-        ...state,
-        user: null,
-      };
+      return state.filter(song => song !== action.payload);
     default:
       return state;
   }
 };
 
-export default userReducer;
+export default songReducer;
