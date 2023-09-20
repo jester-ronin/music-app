@@ -3,3 +3,5 @@ function PlaylistList() {
         <h1>TEST</h1>
     )
 }
+
+export default PlaylistList;
