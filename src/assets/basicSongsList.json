@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "artist": "Nirvana",
+      "title": "In Bloom",
+      "year": 1991,
+      "description": "Song from the album Nevermind"
+    },
+    {
+      "id": 2,
+      "artist": "Blur",
+      "title": "Song 2",
+      "year": 1997,
+      "description": "Rock song from the album Blur"
+    },
+    {
+      "id": 3,
+      "artist": "Radiohead",
+      "title": "Paranoid Android",
+      "year": 1997,
+      "description": "Experimental rock song"
+    },
+    {
+      "id": 4,
+      "artist": "The Beatles",
+      "title": "Hey Jude",
+      "year": 1968,
+      "description": "Classic rock anthem"
+    },
+    {
+      "id": 5,
+      "artist": "Pink Floyd",
+      "title": "Comfortably Numb",
+      "year": 1979,
+      "description": "Progressive rock masterpiece"
+    },
+    {
+      "id": 6,
+      "artist": "Led Zeppelin",
+      "title": "Stairway to Heaven",
+      "year": 1971,
+      "description": "Epic rock ballad"
+    },
+    {
+      "id": 7,
+      "artist": "Queen",
+      "title": "Bohemian Rhapsody",
+      "year": 1975,
+      "description": "Operatic rock song"
+    },
+    {
+      "id": 8,
+      "artist": "David Bowie",
+      "title": "Space Oddity",
+      "year": 1969,
+      "description": "Space-themed rock classic"
+    },
+    {
+      "id": 9,
+      "artist": "The Rolling Stones",
+      "title": "Paint It Black",
+      "year": 1966,
+      "description": "Rock and roll hit"
+    },
+    {
+      "id": 10,
+      "artist": "The Who",
+      "title": "Baba O'Riley",
+      "year": 1971,
+      "description": "Rock anthem from Who's Next"
+    }
+  ]
+  
