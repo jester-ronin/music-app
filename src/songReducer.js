@@ -1,5 +1,7 @@
+import SongExport from "./assets/SongExport";
+
 const initialState = {
-  user: null,
+  SongExport
 };
 
 const songReducer = (state = initialState, action) => {
