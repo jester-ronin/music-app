@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Rock Classics",
+        "description": "A collection of timeless rock classics."
+    },
+    {
+        "id": 2,
+        "name": "Chill Vibes",
+        "description": "Relaxing music to unwind to."
+    },
+    {
+        "id": 3,
+        "name": "Top 40 Hits",
+        "description": "The latest chart-topping hits."
+    },
+    {
+        "id": 4,
+        "name": "90s Throwback",
+        "description": "Nostalgic tunes from the 1990s."
+    }
+]

@@ -1,4 +1,10 @@
-const playlistReducer = (state = [], action) => {
+import playlistExport from "./assets/playlistExport";
+
+const initialState = {
+  playlists : playlistExport
+}
+
+const playlistReducer = (state = initialState, action) => {
     switch (action.type) {
       case 'CREATE_PLAYLIST':
         return [...state, { name: action.payload, songs: [] }];
@@ -13,5 +19,7 @@ const playlistReducer = (state = [], action) => {
         return state;
     }
   };
-  
-  export default playlistReducer;
+
+console.log(playlistExport)
+export const selectPlaylists = (state) => state.playlists.playlists;
+export default playlistReducer;
