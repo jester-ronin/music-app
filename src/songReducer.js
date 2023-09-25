@@ -1,7 +1,8 @@
-import SongExport from "./assets/SongExport";
+import SongExport from "./assets/songExport";
+
 
 const initialState = {
-  SongExport
+  songs: SongExport,
 };
 
 const songReducer = (state = initialState, action) => {
@@ -15,5 +16,6 @@ const songReducer = (state = initialState, action) => {
   }
 };
 
+export const selectSongs = (state) => state.songs.songs;
 export default songReducer;
 

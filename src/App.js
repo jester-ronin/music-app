@@ -3,7 +3,7 @@ import Routes from './Routes';
 import StyleCheck from './StyleCheck';
 import PlaylistList from './components/PlaylistList';
 import SongList from './components/SongsList';
-import songExport from "./assets/SongExport";
+import songExport from "./assets/songExport";
 
 let music = songExport;
 console.log(music)
@@ -15,7 +15,7 @@ function App() {
       <h1>Hello, App!</h1>
       <StyleCheck/>
       <PlaylistList/>
-      <SongList music={music}/>
+      <SongList/>
     </div>
   );
 }
