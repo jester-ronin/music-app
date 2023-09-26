@@ -10,6 +10,10 @@ function PlaylistList() {
         <div>
             <h2>Playlists</h2>
             <ul>
+                <li >
+                    <h3>All</h3>
+                    <p>Description: All available songs on the site</p>
+                </li>
                 {playlists.map((playlist) => {
                     return (
                         <li key={playlist.id}>

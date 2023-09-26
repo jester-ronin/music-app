@@ -20,6 +20,5 @@ const playlistReducer = (state = initialState, action) => {
     }
   };
 
-console.log(playlistExport)
 export const selectPlaylists = (state) => state.playlists.playlists;
 export default playlistReducer;
