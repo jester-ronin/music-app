@@ -1,14 +1,14 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import PlaylistList from './components/PlaylistList';
+import PlaylistDetail from './components/PlaylistDetail';
 import SongList from './components/SongsList';
-import App from './App';
 
 const RoutesComponent = () => {
   return (
     <Routes>
-      <Route path="*" component={<App/>} />
       <Route path="/playlists" component={<PlaylistList />} />
+      <Route path="/playlists/:id" element={<PlaylistDetail />} />
     </Routes>
     
   );
