@@ -11,8 +11,8 @@ const playlistReducer = (state = initialState, action) => {
     case 'CREATE_PLAYLIST':
       const newPlaylist = {
         id: uuidv4(),
-        name: action.payload,
-        description: '',
+        name: action.payload.name,
+        description: action.payload.description,
         songs: [],
       };
       return { ...state, playlists: [...state.playlists, newPlaylist] };

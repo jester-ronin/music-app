@@ -5,17 +5,17 @@ import ModalWindow from './ModalWindow';
 function AddNewPlaylist() {
     const dispatch = useDispatch();
 
-    const handleSave = (playlistName) => {
+    const handleSave = (playlistName, playlistDescription) => {
         if (!playlistName) {
             console.log("empty value")
             return;
         }
-        dispatch(createPlaylist(playlistName));
+        dispatch(createPlaylist(playlistName,playlistDescription));
     };
 
     return (
         <div>
-            <ModalWindow onSave={(playlistName) => handleSave(playlistName)} />
+            <ModalWindow onSave={(playlistName, playlistDescription) => handleSave(playlistName, playlistDescription)} />
         </div>
     );
 }

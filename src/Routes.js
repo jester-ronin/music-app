@@ -2,7 +2,6 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import PlaylistList from './components/PlaylistList';
 import PlaylistDetail from './components/PlaylistDetail';
-import SongList from './components/SongsList';
 
 const RoutesComponent = () => {
   return (

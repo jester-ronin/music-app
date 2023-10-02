@@ -1,6 +1,8 @@
 import { useSelector } from 'react-redux';
 import { selectPlaylists } from '../playlistReduser';
 import AddNewPlaylist from './AddNewPlaylist'
+import { Link } from "react-router-dom"
+
 
 
 function PlaylistList() {
@@ -17,11 +19,9 @@ function PlaylistList() {
                 {playlists.map((playlist) => {
                     return (
                         <li key={playlist.id}>
-                            <h3>{playlist.name}</h3>
-                            <p>Description: {playlist.description}</p>
+                           <h3><Link to={`/playlist/${playlist.id}`}>{playlist.name}</Link></h3> 
+                            {playlist.description && <p>Description: {playlist.description}</p>}
                         </li>
-
-
                     )
                 })}
             </ul>

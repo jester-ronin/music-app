@@ -11,9 +11,7 @@ function App() {
           <Header />
           <ul>
             <li><Link to="/playlist">Playlists</Link></li>
-            <li><Link to="/playlist/1">Playlist1</Link></li>
-            <li><Link to="/playlist/2">Playlist2</Link></li>
-            <li><Link to="/playlist/3">Playlist3</Link></li>
+
 
 
           </ul>

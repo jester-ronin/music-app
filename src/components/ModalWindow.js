@@ -4,6 +4,7 @@ import { Button, Modal } from 'react-bootstrap';
 function ModalWindow({ onSave }) {
     const [show, setShow] = useState(false);
     const [playlistName, setPlaylistName] = useState('');
+    const [playlistDescription, setPlaylistDescription] = useState('');
     const [isInvalid, setIsInvalid] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -33,11 +34,22 @@ function ModalWindow({ onSave }) {
                             setIsInvalid(e.target.value === '');
                         }}
                     />
+                    <input
+                        type="text"
+                        className={`form-control`}
+                        id="validationServer02"
+                        placeholder='Enter your description'
+                        required
+                        value={playlistDescription}
+                        onChange={(e) => {
+                            setPlaylistDescription(e.target.value);
+                        }}
+                    />
                     <Button variant="secondary" onClick={handleClose}>
                         Close
                     </Button>
                     <Button variant="primary" onClick={() => {
-                        onSave(playlistName);
+                        onSave(playlistName, playlistDescription);
                         setPlaylistName("");
                     }}>
                         Save Changes
