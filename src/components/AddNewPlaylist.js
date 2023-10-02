@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { createPlaylist } from '../playlistActions';
-import ModalWindow from './ModalWindow';
+import ModalNewPlaylist from './ModalNewPlaylist';
 
 function AddNewPlaylist() {
     const dispatch = useDispatch();
@@ -15,7 +15,7 @@ function AddNewPlaylist() {
 
     return (
         <div>
-            <ModalWindow onSave={(playlistName, playlistDescription) => handleSave(playlistName, playlistDescription)} />
+            <ModalNewPlaylist onSave={(playlistName, playlistDescription) => handleSave(playlistName, playlistDescription)} />
         </div>
     );
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 
-function ModalWindow({ onSave }) {
+function ModalNewPlaylist({ onSave }) {
     const [show, setShow] = useState(false);
     const [playlistName, setPlaylistName] = useState('');
     const [playlistDescription, setPlaylistDescription] = useState('');
@@ -62,4 +62,4 @@ function ModalWindow({ onSave }) {
     );
 }
 
-export default ModalWindow;
+export default ModalNewPlaylist;
