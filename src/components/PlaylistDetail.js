@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useSelector } from 'react-redux';
 import { selectPlaylists } from '../playlistReduser';
+import SongList from "./SongList";
 
 function PlaylistDetail() {
     const { id } = useParams();
@@ -19,6 +20,7 @@ function PlaylistDetail() {
             ) : (
                 <p>Playlist not found</p>
             )}
+            <SongList/>
         </div>
     )
 }
