@@ -13,7 +13,7 @@ function ModalNewPlaylist({ onSave }) {
     return (
         <>
             <Button variant="primary" onClick={handleShow}>
-                Open Modal
+                Add new playlist
             </Button>
 
             <Modal show={show} onHide={handleClose}>
