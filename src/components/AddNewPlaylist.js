@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
-import { createPlaylist } from '../playlistActions';
+import { createPlaylist } from '../Redusers/playlistActions';
 
 function AddNewPlaylist() {
     const dispatch = useDispatch();

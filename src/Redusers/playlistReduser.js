@@ -1,4 +1,4 @@
-import playlistExport from "./assets/playlistExport";
+import playlistExport from "../assets/playlistExport";
 import { v4 as uuidv4 } from 'uuid';
 
 
@@ -17,19 +17,27 @@ const playlistReducer = (state = initialState, action) => {
       };
       return { ...state, playlists: [...state.playlists, newPlaylist] };
     case 'ADD_SONG_TO_PLAYLIST':
-      return {
-        ...state,
-        playlists: state.playlists.map(playlist => {
-          if (playlist.name === action.payload.playlistName) {
-            return { ...playlist, songs: [...playlist.songs, action.payload.song] };
-          }
-          return playlist;
-        }),
-      };
+      if (action.payload.playlistName === "All") {
+        return {
+          ...state,
+          playlists: state.playlists.map((playlist) => {
+            if (playlist.name === "All") {
+              return {
+                ...playlist,
+                songs: [...playlist.songs, action.payload.song],
+              };
+            }
+            return playlist;
+          }),
+        };
+      } else {
+        return state;
+      }
     default:
       return state;
   }
 };
+
 
 
 export const selectPlaylists = (state) => state.playlists.playlists;

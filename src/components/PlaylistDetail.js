@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useSelector } from 'react-redux';
-import { selectPlaylists } from '../playlistReduser';
+import { selectPlaylists } from '../Redusers/playlistReduser';
 
 function PlaylistDetail() {
     const { id } = useParams();

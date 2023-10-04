@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import { selectPlaylists } from '../playlistReduser';
+import { selectPlaylists } from '../Redusers/playlistReduser';
 import AddNewPlaylist from './AddNewPlaylist'
 import { Link } from "react-router-dom"
 
