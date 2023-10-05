@@ -1,6 +1,5 @@
 import { useSelector } from 'react-redux';
-import { selectSongs } from '../songReducer';
-import { useParams } from 'react-router-dom';
+import { selectSongs } from '../Redusers/songReducer';
 
 function SongList() {
     const songs = useSelector(selectSongs);

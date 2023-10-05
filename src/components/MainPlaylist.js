@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { addSong } from '../Redusers/songActions';
 import { useSelector } from 'react-redux';
 import { selectSongs } from '../Redusers/songReducer';
+import SongsList from './SongsList';
 
 function MainPlaylist() {
     const [showModal, setShowModal] = useState(false);
@@ -34,23 +35,10 @@ function MainPlaylist() {
 
     return (
         <div>
-            <h2>All Songs</h2>
+            <SongsList/>
             <Button variant="primary" onClick={() => setShowModal(true)}>
                 Add new song
             </Button>
-
-            <ul>
-                {songs.map((song) => {
-                    return (
-                        <li key={song.id}>
-                            <h3>{song.artist}</h3>
-                            <h4>{song.title}</h4>
-                            <h5>{song.year}</h5>
-                            <p>Description: {song.description}</p>
-                        </li>
-                    )
-                })}
-            </ul>
 
             <Modal show={showModal} onHide={() => setShowModal(false)}>
                 <Modal.Header closeButton>
