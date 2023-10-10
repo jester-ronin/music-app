@@ -1,27 +1,23 @@
-import { useSelector } from 'react-redux';
-import { selectSongs } from '../Redusers/songReducer';
+//import { useSelector } from 'react-redux';
+//import { selectSongs } from '../Redusers/songReducer';
 
-function SongList() {
-    const songs = useSelector(selectSongs);
 
+function SongList({ songs }) {
     return (
         <div>
             <h2>Songs</h2>
-            <ul>
-                {songs.map((song) => {
-                    return (
-                        <li key={song.id}>
-                            <h3>{song.title}</h3>
-                            <p>Artist: {song.artist}</p>
-                            <p>Year: {song.year}</p>
-                            <p>Description: {song.description}</p>
-
-                        </li>
-                    )
-                })}
+            <ul>{songs.map(item =>
+                <li key={item.id}>
+                    <h3>{item.artist}</h3>
+                    <p>{item.title}</p>
+                    <p>Year: {item.year}</p>
+                    <p>Description: {item.description}</p>
+                </li>
+            )}
             </ul>
         </div>
     )
 }
 
 export default SongList
+

@@ -41,4 +41,5 @@ const playlistReducer = (state = initialState, action) => {
 
 
 export const selectPlaylists = (state) => state.playlists.playlists;
+export const selectPlaylistById = (id,state) => state.playlists.playlists.find((playlist) => playlist.id === id);
 export default playlistReducer;

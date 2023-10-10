@@ -1,13 +1,12 @@
 import { useParams } from "react-router-dom";
 import { useSelector } from 'react-redux';
-import { selectPlaylists } from '../Redusers/playlistReduser';
+import { selectPlaylistById} from '../Redusers/playlistReduser';
+import SongsList from "./SongsList";
 
 function PlaylistDetail() {
     const { id } = useParams();
-    const playlists = useSelector(selectPlaylists);
-    const playlistId = isNaN(id) ? id : Number(id);
-
-    const playlist = playlists.find((playlist) => playlist.id === playlistId);
+    const playlistId = isNaN(id) ? id : Number(id)
+    const playlist = useSelector(state => selectPlaylistById(playlistId, state));
 
     return (
         <div>
@@ -15,6 +14,8 @@ function PlaylistDetail() {
                 <div>
                     <h2>Playlist: {playlist.name}</h2>
                     <p>Description: {playlist.description}</p>
+                    <SongsList songs={playlist.songs}
+                    />
                 </div>
             ) : (
                 <p>Playlist not found</p>

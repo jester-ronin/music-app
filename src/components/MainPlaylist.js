@@ -22,7 +22,7 @@ function MainPlaylist() {
             return;
         }
 
-        
+
         dispatch(addSong({
             artist: artistName,
             title: songTitle,
@@ -35,7 +35,7 @@ function MainPlaylist() {
 
     return (
         <div>
-            <SongsList/>
+            <SongsList songs={songs} />
             <Button variant="primary" onClick={() => setShowModal(true)}>
                 Add new song
             </Button>
