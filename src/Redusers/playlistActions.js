@@ -4,7 +4,7 @@ export const createPlaylist = (playlistName, playlistDescription) => ({
   });
   
 
-export const addSongToPlaylist = (playlistName, song) => ({
+export const addSongToPlaylist = (playlistId, song) => ({
     type: "ADD_SONG_TO_PLAYLIST",
-    payload: { playlistName, song },
+    payload: { playlistId, song },
 });

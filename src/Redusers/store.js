@@ -1,6 +1,6 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import songReducer from "./songReducer";
-import playlistReducer from "./playlistReduser";
+import playlistReducer from "./playlistReducer";
 
 const rootReducer = combineReducers({
   songs: songReducer,

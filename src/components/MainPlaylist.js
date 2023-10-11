@@ -35,10 +35,11 @@ function MainPlaylist() {
 
     return (
         <div>
-            <SongsList songs={songs} />
             <Button variant="primary" onClick={() => setShowModal(true)}>
                 Add new song
             </Button>
+            
+            <SongsList songs={songs} />
 
             <Modal show={showModal} onHide={() => setShowModal(false)}>
                 <Modal.Header closeButton>

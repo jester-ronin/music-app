@@ -20,11 +20,4 @@ class Playlist {
 }
 
 
-let song = new Song("Nirvana", "In bloom", 1991, "Song from album Nevermind")
-const song2 = new Song("Blur", "Song2", 1999, "90s rock masterpiece");
-let playlist = new Playlist('Rock')
-playlist.addSong(song)
-playlist.addSong(song2)
-
-
 export default Playlist;
