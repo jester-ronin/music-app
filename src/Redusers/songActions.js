@@ -6,4 +6,4 @@ export const addSong = (song) => ({
 export const removeSong = (song) => ({
     type: 'REMOVE_SONG',
     payload: song,
-  });
+});

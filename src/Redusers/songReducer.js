@@ -10,22 +10,22 @@ const initialState = {
 const songReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'ADD_SONG':
-      const newPlaylist = {
+      const newSong = {
         id: uuidv4(),
         artist: action.payload.artist,
         title: action.payload.title,
         year: action.payload.year,
         description: action.payload.description,
-        songs: [],
       };
       return {
         ...state,
-        songs: [...state.songs, newPlaylist],
+        songs: [...state.songs, newSong],
       };
     case 'REMOVE_SONG':
+      debugger
       return {
         ...state,
-        songs: state.songs.filter(song => song !== action.payload),
+        songs: state.songs.filter(song => song.id !== action.payload),
       };
     default:
       return state;
@@ -35,4 +35,6 @@ const songReducer = (state = initialState, action) => {
 
 export const selectSongs = (state) => state.songs.songs;
 export default songReducer;
+
+
 

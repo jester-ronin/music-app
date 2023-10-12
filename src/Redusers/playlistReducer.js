@@ -4,11 +4,9 @@ import { v4 as uuidv4 } from 'uuid';
 export const selectPlaylists = (state) => state.playlists.playlists;
 export const selectPlaylistById = (id, state) => state.playlists.playlists.find((playlist) => playlist.id === id);
 
-
-
 const initialState = {
   playlists: playlistExport,
-}
+};
 
 const playlistReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -20,10 +18,9 @@ const playlistReducer = (state = initialState, action) => {
         songs: [],
       };
       return { ...state, playlists: [...state.playlists, newPlaylist] };
+
     case 'ADD_SONG_TO_PLAYLIST':
       const { playlistId, song } = action.payload;
-
-
       const isSongInPlaylist = state.playlists
         .find(playlist => playlist.id === playlistId)
         .songs.some(existingSong => existingSong.id === song.id);
@@ -42,14 +39,26 @@ const playlistReducer = (state = initialState, action) => {
           }),
         };
       } else {
-        return state; 
+        return state;
       }
+
+    case 'REMOVE_SONG_FROM_PLAYLIST':
+      return {
+        ...state,
+        playlists: state.playlists.map((playlist) => {
+          if (playlist.id === action.payload.playlistId) {
+            return {
+              ...playlist,
+              songs: playlist.songs.filter(song => song.id !== action.payload.songId),
+            };
+          }
+          return playlist;
+        }),
+      };
 
     default:
       return state;
   }
 };
-
-
 
 export default playlistReducer;
