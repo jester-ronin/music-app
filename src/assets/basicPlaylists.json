@@ -3,24 +3,33 @@
         "id": 0,
         "name": "Rock Classics",
         "description": "A collection of timeless rock classics.",
-        "songs": []
+        "songs": [],
+        "imageURL": "https://i.scdn.co/image/ab67706f0000000278b4745cb9ce8ffe32daaf7e"
+
     },
     {
         "id": 1,
         "name": "Chill Vibes",
         "description": "Relaxing music to unwind to.",
-        "songs": []
+        "songs": [],
+        "imageURL": "https://i.scdn.co/image/ab67706f00000002f2d08778548e125bcb867692"
+
     },
     {
         "id": 2,
         "name": "Top 40 Hits",
         "description": "The latest chart-topping hits.",
-        "songs": []
+        "songs": [],
+        "imageURL": "https://dev-resws.hungamatech.com/featured_content/e61ebf8a38a4274a59cfeb167c9d9cd2_500x500.jpg"
+
     },
     {
         "id": 3,
         "name": "90s Throwback",
         "description": "Nostalgic tunes from the 1990s.",
-        "songs": []
+        "songs": [],
+        "imageURL": "https://s3-prod.dogtopia.com/wp-content/uploads/sites/164/2020/04/90s-Throwback-Party.jpg"
+
     }
 ]
+

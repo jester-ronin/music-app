@@ -56,6 +56,20 @@ const playlistReducer = (state = initialState, action) => {
         }),
       };
 
+    case 'SET_PLAYLIST_IMAGE':
+      return {
+        ...state,
+        playlists: state.playlists.map((playlist) => {
+          if (playlist.id === action.payload.playlistId) {
+            return {
+              ...playlist,
+              image: action.payload.imageURL,
+            };
+          }
+          return playlist;
+        }),
+      };
+
     default:
       return state;
   }

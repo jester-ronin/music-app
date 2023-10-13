@@ -30,6 +30,7 @@ function PlaylistDetail() {
     <div>
       {playlist ? (
         <div>
+          <img src={playlist.imageURL} alt={playlist.name} />
           <h2>Playlist: {playlist.name}</h2>
           <p>Description: {playlist.description}</p>
           <SongsList songs={playlist.songs} onRemoveSong={handleRemoveSong} />
