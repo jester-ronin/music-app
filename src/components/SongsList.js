@@ -4,7 +4,7 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 function SongsList({ songs, onRemoveSong }) {
     return (
-        <div>
+        <div >
             <h2>Songs</h2>
             <ul>
                 {songs.map((item) => (

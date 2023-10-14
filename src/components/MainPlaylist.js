@@ -39,7 +39,8 @@ function MainPlaylist() {
                 Add new song
             </Button>
             
-            <SongsList songs={songs} />
+            <SongsList songs={songs}/>
+
 
             <Modal show={showModal} onHide={() => setShowModal(false)}>
                 <Modal.Header closeButton>

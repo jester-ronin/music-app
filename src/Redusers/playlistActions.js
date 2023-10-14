@@ -21,3 +21,8 @@ export const setPlaylistImage = (playlistId, imageURL) => ({
   type: 'SET_PLAYLIST_IMAGE',
   payload: { playlistId, imageURL },
 });
+
+export const setUserPLaylistImage = (playlistId, imageURL) => ({
+  type: 'SET_USER_PLAYLIST_IMAGE',
+  payload: { playlistId, imageURL },
+})
