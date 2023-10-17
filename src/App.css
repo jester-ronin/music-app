@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.main-container {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer-wrapper {
+  margin-top: auto;
+}
+
+footer {
+  background-color: #041322;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  margin-top: 1em;
+}
+
+html {
+  background-color: darkred;
+}

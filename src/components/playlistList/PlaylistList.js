@@ -1,7 +1,8 @@
 import { useSelector } from 'react-redux';
-import { selectPlaylists } from '../Redusers/playlistReducer';
-import AddNewPlaylist from './AddNewPlaylist';
+import { selectPlaylists } from '../../Redusers/playlistReducer';
 import { Link } from "react-router-dom";
+import AddNewPlaylist from '../addNewPlaylist/AddNewPlaylist';
+import './playlistList.css'
 
 
 
@@ -9,7 +10,8 @@ function PlaylistList() {
     const playlists = useSelector(selectPlaylists);
 
     return (
-        <div>
+        <div class="container text-center">
+            <img src='https://e1.pxfuel.com/desktop-wallpaper/435/382/desktop-wallpaper-audio-cassette-minimalist-artist-backgrounds-and-music-minimalist-thumbnail.jpg' alt="Playlist" />
             <ul>
                 <li>
                     <h3><Link to="/playlist/all">All songs</Link></h3>

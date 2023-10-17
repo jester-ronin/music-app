@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { selectPlaylistById } from '../Redusers/playlistReducer';
-import { addSongToPlaylist, removeSongFromPlaylist, setUserPLaylistImage } from '../Redusers/playlistActions';
-import SongsList from './SongsList';
+import { selectPlaylistById } from '../../Redusers/playlistReducer';
+import { addSongToPlaylist, removeSongFromPlaylist, setUserPLaylistImage } from '../../Redusers/playlistActions';
+import SongsList from '../songsList/SongsList';
 import { SplitButton, Dropdown, Modal, Button } from 'react-bootstrap';
-import { selectSongs } from '../Redusers/songReducer';
+import { selectSongs } from '../../Redusers/songReducer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faImage } from '@fortawesome/free-solid-svg-icons';
+import './playlistDetail.css'
+
 
 function PlaylistDetail() {
   const { id } = useParams();
@@ -49,7 +53,7 @@ function PlaylistDetail() {
   return (
     <div>
       {playlist ? (
-        <div>
+        <div class="container text-center">
           <img src={playlist.imageURL} alt={playlist.name} />
           <h2>Playlist: {playlist.name}</h2>
           <p>Description: {playlist.description}</p>
@@ -69,6 +73,7 @@ function PlaylistDetail() {
           </SplitButton>
 
           <Button variant="primary" onClick={handleShowModal}>
+          <FontAwesomeIcon icon={faImage}/>
             Change Playlist Image
           </Button>
 
@@ -78,11 +83,12 @@ function PlaylistDetail() {
             </Modal.Header>
             <Modal.Body>
               <p>Enter the URL of the new image:</p>
-              <input
+              <input 
+                id='input'
                 type="text"
                 value={imageUrl}
                 onChange={handleImageUrlChange}
-                placeholder="Enter Image URL"
+                placeholder="your Image URL"
               />
             </Modal.Body>
             <Modal.Footer>

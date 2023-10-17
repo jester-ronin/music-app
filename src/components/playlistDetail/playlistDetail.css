@@ -1,0 +1,23 @@
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#input {
+    padding-right: 275px;
+}
+
+#split-button-dropdown {
+    background-color: #b51a2b;
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background-color: #b51a2b !important;
+}
+
+
+ 

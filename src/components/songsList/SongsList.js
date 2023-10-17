@@ -1,11 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import './songsList.css'
 
 
 function SongsList({ songs, onRemoveSong }) {
     return (
-        <div >
-            <h2>Songs</h2>
+        <div class="container text-center">
+            <h2 id='songs'>Songs:</h2>
             <ul>
                 {songs.map((item) => (
                     <li key={item.id}>
@@ -13,7 +14,7 @@ function SongsList({ songs, onRemoveSong }) {
                         <p>{item.title}</p>
                         <p>Year: {item.year}</p>
                         <p>Description: {item.description}</p>
-                        <button onClick={() => onRemoveSong(item.id)}>
+                        <button id='trash' onClick={() => onRemoveSong(item.id)}>
                             <FontAwesomeIcon icon={faTrash} />
                         </button>
                     </li>

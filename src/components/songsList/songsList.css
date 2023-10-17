@@ -1,0 +1,28 @@
+ul li {
+  list-style: none;
+}
+
+h3 {
+  text-align: center;
+  padding-top: 3px;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 3px;
+
+}
+
+p {
+  text-align: center;
+  padding-top: 3px;
+}
+
+#songs {
+  padding-left: 33px;
+}
+
+#trash {
+  margin-bottom: 5px;
+  background-color: #b51a2b;
+}

@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
-import { addSong } from '../Redusers/songActions';
+import { addSong } from '../../Redusers/songActions';
 import { useSelector } from 'react-redux';
-import { selectSongs } from '../Redusers/songReducer';
-import SongsList from './SongsList';
+import { selectSongs } from '../../Redusers/songReducer';
+import SongsList from '../songsList/SongsList';
+import './mainPlaylist.css'
 
 function MainPlaylist() {
     const [showModal, setShowModal] = useState(false);

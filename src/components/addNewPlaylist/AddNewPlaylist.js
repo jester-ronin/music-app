@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
-import { createPlaylist } from '../Redusers/playlistActions';
+import { createPlaylist } from '../../Redusers/playlistActions';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import './addNewPlaylist.css'
 
 function AddNewPlaylist() {
     const dispatch = useDispatch();
@@ -26,9 +29,14 @@ function AddNewPlaylist() {
 
     return (
         <>
-            <Button variant="primary" onClick={handleShow}>
-                Add new playlist
-            </Button>
+            <div className="fab-container">
+                <button className="fab-button" onClick={handleShow}>
+                    <FontAwesomeIcon icon={faPlus} />
+                </button>
+
+                <Modal show={show} onHide={handleClose}>
+                </Modal>
+            </div>
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
@@ -66,6 +74,7 @@ function AddNewPlaylist() {
                         Save Changes
                     </Button>
                 </Modal.Footer>
+
             </Modal>
         </>
     );
