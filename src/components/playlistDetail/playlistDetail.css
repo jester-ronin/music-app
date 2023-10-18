@@ -20,4 +20,17 @@ p {
 }
 
 
- 
+ img {
+    width: 300px;
+    height: 300px;
+ }
+
+ #main-playlist-link {
+    margin-top: 10px;
+    transition: background-color 0.5s;
+    
+ }
+
+ #main-playlist-link:hover {
+    background-color: #5f4daf !important;
+}

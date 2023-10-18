@@ -48,6 +48,11 @@
   margin-top: auto;
 }
 
+#main-playlist-link a {
+  text-decoration: none;
+  color: inherit;
+}
+
 footer {
   background-color: #041322;
   color: #fff;
@@ -58,4 +63,42 @@ footer {
 
 html {
   background-color: darkred;
+}
+
+.playlist1-bg {
+  background-color: rgb(223, 223, 193);
+}
+
+.playlist2-bg {
+  background-color: rgb(180, 180, 148);
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.fade-appear {
+  opacity: 0;
+}
+
+.fade-appear-active {
+  opacity: 1;
+  transition: opacity 300ms;
 }

@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { addSong } from '../../Redusers/songActions';
 import { useSelector } from 'react-redux';
 import { selectSongs } from '../../Redusers/songReducer';
+import { removeSong } from '../../Redusers/songActions';
 import SongsList from '../songsList/SongsList';
 import './mainPlaylist.css'
 
@@ -34,13 +35,19 @@ function MainPlaylist() {
         setShowModal(false);
     };
 
+    const handleRemove = (song) => {
+        dispatch(removeSong(song))
+    }
+
+
     return (
         <div>
-            <Button variant="primary" onClick={() => setShowModal(true)}>
+            <Button id='Add-new-song' variant="primary" onClick={() => setShowModal(true)}>
                 Add new song
             </Button>
-            
-            <SongsList songs={songs}/>
+
+            <SongsList songs={songs} onRemoveSong={handleRemove} />
+
 
 
             <Modal show={showModal} onHide={() => setShowModal(false)}>

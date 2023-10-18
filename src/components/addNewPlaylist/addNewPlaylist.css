@@ -13,4 +13,10 @@
     position: fixed;
     bottom: 80px; 
     right: 40px;
+    transition: transform 0.5s, background-color 0.5s;
 }
+
+.fab-button:hover {
+    transform: rotate(360deg); 
+    background-color: #5f4daf 
+  }

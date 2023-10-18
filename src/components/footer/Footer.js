@@ -2,7 +2,7 @@ import './footer.css'
 
 function Footer() {
     return (
-      <footer className="py-3">
+      <footer className="py-4">
         <div id='content' className="container">
           <div className="row">
             <div className="col-12 text-center">

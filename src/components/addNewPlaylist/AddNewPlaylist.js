@@ -46,7 +46,7 @@ function AddNewPlaylist() {
                 <Modal.Footer>
                     <input
                         type="text"
-                        className={`form-control ${isInvalid ? 'is-invalid' : 'is-valid'}`}
+                        className={`form-control ${isInvalid ? 'is-invalid' : playlistName ? 'is-valid' : ''}`}
                         id="validationServer02"
                         placeholder='Enter name of new playlist'
                         required

@@ -11,7 +11,8 @@ function PlaylistList() {
 
     return (
         <div class="container text-center">
-            <img src='https://e1.pxfuel.com/desktop-wallpaper/435/382/desktop-wallpaper-audio-cassette-minimalist-artist-backgrounds-and-music-minimalist-thumbnail.jpg' alt="Playlist" />
+            <AddNewPlaylist />
+            <img id='main-image' src='https://media.istockphoto.com/id/172757757/photo/music-can.jpg?s=612x612&w=0&k=20&c=9t6JXU0B2ubVRPO8aLdCmotlSYnT8lv13ZKL17vpIrs=' alt="Playlist" />
             <ul>
                 <li>
                     <h3><Link to="/playlist/all">All songs</Link></h3>
@@ -28,7 +29,6 @@ function PlaylistList() {
                     )
                 })}
             </ul>
-            <AddNewPlaylist />
         </div>
 
     )
