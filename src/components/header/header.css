@@ -1,8 +1,10 @@
 
 .custom-header {
     background-color: #0a253f;
+    margin-bottom: 50px;
+
   }
 
 .footer-container {
-  margin-left: 8cm;
+  padding-right: 35px;
 }

@@ -7,7 +7,6 @@ import PlaylistList from './components/playlistList/PlaylistList';
 import PlaylistDetail from './components/playlistDetail/PlaylistDetail';
 import { Route, Routes, Link } from "react-router-dom";
 import MainPlaylist from './components/mainPlaylist/MainPlaylist';
-import { Button } from 'react-bootstrap';
 
 
 function App() {
@@ -25,11 +24,6 @@ function App() {
     <div className={`main-container ${containerClassName}`} >
       <Header />
       <div className="container">
-        <ul>
-          <li>
-            <Button id='main-playlist-link'><Link to="/playlist">All playlists</Link></Button>
-          </li>
-        </ul>
         <CSSTransition in={true} appear={true} classNames="fade" timeout={300}>
           <Routes>
             <Route path="/" element={<PlaylistList />} />
