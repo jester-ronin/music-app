@@ -88,7 +88,7 @@ function PlaylistDetail() {
                 type="text"
                 value={imageUrl}
                 onChange={handleImageUrlChange}
-                placeholder="your image URL"
+                placeholder="Your image URL"
               />
             </Modal.Body>
             <Modal.Footer>

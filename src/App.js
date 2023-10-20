@@ -5,7 +5,7 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import PlaylistList from './components/playlistList/PlaylistList';
 import PlaylistDetail from './components/playlistDetail/PlaylistDetail';
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import MainPlaylist from './components/mainPlaylist/MainPlaylist';
 
 
@@ -24,7 +24,7 @@ function App() {
     <div className={`main-container ${containerClassName}`} >
       <Header />
       <div className="container">
-        <CSSTransition in={true} appear={true} classNames="fade" timeout={300}>
+        <CSSTransition in={true} appear={true} classNames="fade" timeout={3000}>
           <Routes>
             <Route path="/" element={<PlaylistList />} />
             <Route path="/playlist" element={<PlaylistList />} />

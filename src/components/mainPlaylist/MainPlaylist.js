@@ -7,6 +7,10 @@ import { selectSongs } from '../../Redusers/songReducer';
 import { removeSong } from '../../Redusers/songActions';
 import SongsList from '../songsList/SongsList';
 import './mainPlaylist.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+
+
 
 function MainPlaylist() {
     const [showModal, setShowModal] = useState(false);
@@ -42,9 +46,14 @@ function MainPlaylist() {
 
     return (
         <div>
-            <Button id='Add-new-song' variant="primary" onClick={() => setShowModal(true)}>
-                Add new song
-            </Button>
+            <div className="fab-container">
+                <button className="fab-button" onClick={() => setShowModal(true)}>
+                    <FontAwesomeIcon icon={faPlus} />
+                </button>
+
+                <Modal show={showModal} onHide={() => setShowModal(false)}>
+                </Modal>
+            </div>
 
             <SongsList songs={songs} onRemoveSong={handleRemove} />
 

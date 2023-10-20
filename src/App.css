@@ -42,6 +42,7 @@
   justify-content: start;
   flex-direction: column;
   min-height: 100vh;
+  overflow-y: auto;
 }
 
 .footer-wrapper {
@@ -73,32 +74,27 @@ html {
   background-color: rgb(180, 180, 148);
 }
 
+/* Фаза входа */
 .fade-enter {
   opacity: 0;
   transform: translateY(20px);
 }
 
+/* Фаза выхода */
 .fade-exit {
   opacity: 1;
 }
 
+/* Активная фаза входа */
 .fade-enter-active {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 300ms, transform 300ms;
+  transition: opacity 3000ms, transform 3000ms;
 }
 
+/* Активная фаза выхода */
 .fade-exit-active {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 300ms, transform 300ms;
-}
-
-.fade-appear {
-  opacity: 0;
-}
-
-.fade-appear-active {
-  opacity: 1;
-  transition: opacity 300ms;
+  transition: opacity 3000ms, transform 3000ms;
 }

@@ -10,3 +10,10 @@ p {
     width: auto;
     height: auto;
 }
+
+@media (max-width: 768px) {
+    #main-image {
+      width: 360px;
+      height: 241px;
+    }
+  }
