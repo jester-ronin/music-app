@@ -18,13 +18,16 @@ function MainPlaylist() {
     const [songTitle, setSongTitle] = useState('');
     const [songYear, setSongYear] = useState('');
     const [songDescription, setSongDescription] = useState('');
+    const [isInvalid, setIsInvalid] = useState(false);
+
 
     const dispatch = useDispatch();
     const songs = useSelector(selectSongs);
 
     const handleSave = () => {
-        if (!artistName || !songTitle || !songYear || !songDescription) {
+        if (!artistName || !songTitle) {
             console.log("empty values");
+            alert('The artist name and track title must be entered')
             return;
         }
 
@@ -66,19 +69,26 @@ function MainPlaylist() {
                 <Modal.Body>
                     <input
                         type="text"
-                        className="form-control"
+                        className={`form-control ${!artistName && isInvalid ? 'is-invalid' : artistName ? 'is-valid' : ''}`}
                         placeholder='Enter artist name'
                         required
                         value={artistName}
-                        onChange={(e) => setArtistName(e.target.value)}
+                        onChange={(e) => {
+                            setArtistName(e.target.value);
+                            setIsInvalid(!e.target.value);
+                        }}
                     />
+
                     <input
                         type="text"
-                        className="form-control"
+                        className={`form-control ${!songTitle && isInvalid ? 'is-invalid' : songTitle ? 'is-valid' : ''}`}
                         placeholder='Enter song title'
                         required
                         value={songTitle}
-                        onChange={(e) => setSongTitle(e.target.value)}
+                        onChange={(e) => {
+                            setSongTitle(e.target.value);
+                            setIsInvalid(!e.target.value);
+                        }}
                     />
                     <input
                         type="text"

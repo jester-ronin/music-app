@@ -1,11 +1,10 @@
 import './App.css';
-import { CSSTransition } from 'react-transition-group';
-import { useLocation } from "react-router-dom";
+import { CSSTransition} from 'react-transition-group';
+import {  Route, Routes, useLocation } from "react-router-dom";
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import PlaylistList from './components/playlistList/PlaylistList';
 import PlaylistDetail from './components/playlistDetail/PlaylistDetail';
-import { Route, Routes } from "react-router-dom";
 import MainPlaylist from './components/mainPlaylist/MainPlaylist';
 
 

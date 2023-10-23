@@ -22,7 +22,6 @@ const songReducer = (state = initialState, action) => {
         songs: [...state.songs, newSong],
       };
     case 'REMOVE_SONG':
-      debugger
       return {
         ...state,
         songs: state.songs.filter(song => song.id !== action.payload),

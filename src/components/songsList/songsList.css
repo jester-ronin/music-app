@@ -1,31 +1,25 @@
 ul li {
   list-style: none;
+  border: 1.5px solid #777676;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+  transition: border-color 0.3s ease-in-out;
 }
 
-h3 {
-  text-align: center;
+.song-container {
+  text-align: left;
   padding-top: 3px;
   transition: text-shadow 0.3s ease-in-out;
 }
 
-
-h3:hover {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+ul li:hover {
+  border-color: #b51a2b;
 }
 
-h2 {
-  text-align: center;
-  padding-top: 3px;
-  transition: text-shadow 0.3s ease-in-out;
-}
-
+h3:hover,
 h2:hover {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-p {
-  text-align: center;
-  padding-top: 3px;
 }
 
 #songs {
@@ -36,3 +30,10 @@ p {
   margin-bottom: 5px;
   background-color: #b51a2b;
 }
+
+.text-with-texture {
+  background-color: rgb(26, 23, 23);
+  color: aliceblue ;
+}
+
+

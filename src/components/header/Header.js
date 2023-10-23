@@ -6,14 +6,12 @@ import { Button } from 'react-bootstrap';
 function Header() {
   return (
     <nav className="navbar navbar-dark custom-header">
-      <ul>
-        <li>
-          <Button id='main-playlist-link'><Link to="/playlist">All playlists</Link></Button>
-        </li>
-      </ul>
+          <Link to="/playlist" >
+            <Button id='main-playlist-link'>All playlists</Button>
+          </Link>
       <div className="footer-container">
         <span className="navbar-brand mb-0 h1">
-          Моя Шапка
+          Music playlist
         </span>
       </div>
     </nav>

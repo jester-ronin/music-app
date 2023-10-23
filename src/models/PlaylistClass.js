@@ -2,9 +2,10 @@ import Song from "./SongClass";
 
 
 class Playlist {
-    constructor(name, songs = []) {
+    constructor(name, url, songs = []) {
         this.name = name;
         this.songs = songs;
+        this.url = url;
     }
 
     addSong(song) {
