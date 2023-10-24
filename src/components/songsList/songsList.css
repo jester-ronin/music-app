@@ -4,8 +4,8 @@
   border-radius: 5px;
   margin: 10px;
   padding: 10px;
-  transition: border-color 0.3s ease-in-out;
-  box-shadow: 8px 15px 5px 2px;
+  transition: border-color 1.0s ease-in-out;
+  box-shadow: 10px 12px 12px 1px;
   margin-bottom: 30px;
 }
 
@@ -15,7 +15,7 @@
   text-align: left;
   flex-direction: column;
   padding-top: 3px;
-  transition: text-shadow 0.3s ease-in-out;
+  transition: text-shadow 1.0s ease-in-out;
   justify-content: center;
 }
 
@@ -35,9 +35,7 @@ h2:hover {
   text-shadow: 7px 10px 8px rgba(0, 0, 0, 0.2);
 }
 
-#songs {
-  padding-left: 33px;
-}
+
 
 #trash {
   margin-bottom: 5px;

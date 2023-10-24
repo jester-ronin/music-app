@@ -4,6 +4,10 @@ h3 a{
     color: black;
     
 }
+
+h3 :hover {
+    color: crimson ;
+}
   
 p {
     font-family: Arial, Helvetica, sans-serif;

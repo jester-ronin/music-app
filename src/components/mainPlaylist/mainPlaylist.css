@@ -2,3 +2,16 @@
     margin-top: 15px;
 }
 
+#main-playlist-image{
+    width: 600px;
+    height: 600px;
+    display: block;
+    margin: 0 auto; 
+}
+
+@media (max-width: 768px) {
+    #main-playlist-image {
+      width: 300px;
+      height: 300px;
+    }
+  }

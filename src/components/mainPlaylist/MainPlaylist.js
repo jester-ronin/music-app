@@ -49,6 +49,7 @@ function MainPlaylist() {
 
     return (
         <div>
+            <img id='main-playlist-image' src='https://upload.wikimedia.org/wikipedia/it/thumb/1/1a/All_Music_logo.svg/1200px-All_Music_logo.svg.png' alt="main-playlist" />
             <div className="fab-container">
                 <button className="fab-button" onClick={() => setShowModal(true)}>
                     <FontAwesomeIcon icon={faPlus} />
@@ -59,7 +60,6 @@ function MainPlaylist() {
             </div>
 
             <SongsList songs={songs} onRemoveSong={handleRemove} />
-
 
 
             <Modal show={showModal} onHide={() => setShowModal(false)}>

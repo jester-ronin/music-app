@@ -7,7 +7,7 @@ import Card from 'react-bootstrap/Card';
 function SongsList({ songs, onRemoveSong }) {
     return (
         <div className="container text-center">
-            <h2 id='songs'>Songs:</h2>
+            <h2>Songs:</h2>
             <div className='song-container'>
                 <ul className="container center">
                     {songs.map((item) => (

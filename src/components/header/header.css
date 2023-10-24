@@ -12,6 +12,7 @@
 #main-playlist-link {
   margin-bottom: 10px;
   margin-left: 30px;
+  font-weight: bold;
 }
 
 #main-playlist-link:hover {
