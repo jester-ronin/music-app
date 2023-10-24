@@ -1,17 +1,10 @@
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .main-container {
   display: flex;
   justify-content: start;
   flex-direction: column;
   min-height: 100vh;
   overflow-y: auto;
+  
 }
 
 .footer-wrapper {
@@ -24,7 +17,7 @@
 }
 
 footer {
-  background-color: #041322;
+  background-color: #ab3a5b;
   color: #fff;
   padding: 15px 0;
   text-align: center;
@@ -36,34 +29,9 @@ html {
 }
 
 .playlist1-bg {
-  background-color: rgb(223, 223, 193);
+  background-color: #f3e1dd;
 }
 
 .playlist2-bg {
-  background-color: rgb(180, 180, 148);
-}
-
-/* Фаза входа */
-.fade-enter {
-  opacity: 0;
-  transform: translateY(50px);
-}
-
-/* Фаза выхода */
-.fade-exit {
-  opacity: 1;
-}
-
-/* Активная фаза входа */
-.fade-enter-active {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 3000ms, transform 3000ms;
-}
-
-/* Активная фаза выхода */
-.fade-exit-active {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 3000ms, transform 3000ms;
+  background-color: #f3e1dd;
 }

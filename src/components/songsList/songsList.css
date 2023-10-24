@@ -1,25 +1,38 @@
-ul li {
+.card {
   list-style: none;
-  border: 1.5px solid #777676;
+  border: 2.5px solid #777676;
   border-radius: 5px;
-  margin: 10px 0;
+  margin: 10px;
   padding: 10px;
   transition: border-color 0.3s ease-in-out;
+  box-shadow: 8px 15px 5px 2px;
+  margin-bottom: 30px;
 }
+
 
 .song-container {
+  display: flex;
   text-align: left;
+  flex-direction: column;
   padding-top: 3px;
   transition: text-shadow 0.3s ease-in-out;
+  justify-content: center;
 }
 
-ul li:hover {
-  border-color: #b51a2b;
+@media (max-width: 768px) {
+  ul {
+    padding-left: 0; 
+  }
+}
+
+
+.card:hover {
+  border-color: #CC7178
 }
 
 h3:hover,
 h2:hover {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 7px 10px 8px rgba(0, 0, 0, 0.2);
 }
 
 #songs {
@@ -28,12 +41,9 @@ h2:hover {
 
 #trash {
   margin-bottom: 5px;
-  background-color: #b51a2b;
+  background-color: #cc7178;
 }
 
-.text-with-texture {
-  background-color: rgb(26, 23, 23);
-  color: aliceblue ;
-}
+
 
 

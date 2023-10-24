@@ -1,5 +1,4 @@
 import './App.css';
-import { CSSTransition} from 'react-transition-group';
 import {  Route, Routes, useLocation } from "react-router-dom";
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
@@ -23,14 +22,12 @@ function App() {
     <div className={`main-container ${containerClassName}`} >
       <Header />
       <div className="container">
-        <CSSTransition in={true} appear={true} classNames="fade" timeout={3000}>
           <Routes>
             <Route path="/" element={<PlaylistList />} />
             <Route path="/playlist" element={<PlaylistList />} />
             <Route path="/playlist/:id" element={<PlaylistDetail />} />
             <Route path="/playlist/all" element={<MainPlaylist />} />
           </Routes>
-        </CSSTransition>
       </div>
       <div className='footer-wrapper'>
         <Footer />

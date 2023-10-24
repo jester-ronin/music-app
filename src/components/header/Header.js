@@ -6,7 +6,7 @@ import { Button } from 'react-bootstrap';
 function Header() {
   return (
     <nav className="navbar navbar-dark custom-header">
-          <Link to="/playlist" >
+          <Link to="/playlist">
             <Button id='main-playlist-link'>All playlists</Button>
           </Link>
       <div className="footer-container">

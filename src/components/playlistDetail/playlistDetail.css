@@ -1,5 +1,6 @@
 h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 20px;
 }
 
 p {
@@ -16,7 +17,8 @@ p {
 }
 
 .btn-primary {
-    background-color: #b51a2b !important;
+    background-color: #cc7178!important;
+    margin-top: 15px;
 }
 
 

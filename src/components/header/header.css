@@ -1,9 +1,9 @@
 
 .custom-header {
-    background-color: #0a253f;
+    background-color: #89023e;
     margin-bottom: 50px;
 
-  }
+}
 
 .footer-container {
   padding-right: 35px;
@@ -15,5 +15,6 @@
 }
 
 #main-playlist-link:hover {
-  background-color: #5f4daf !important;
+  background-color: #8E677E !important;
 }
+

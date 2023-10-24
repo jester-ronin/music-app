@@ -2,7 +2,7 @@
     width: 50px; 
     height: 50px; 
     border-radius: 50%; 
-    background-color: #b51a2b; 
+    background-color: #89023e ; 
     color: #fff; 
     font-size: 24px; 
     display: flex;
@@ -14,9 +14,10 @@
     bottom: 80px; 
     right: 40px;
     transition: transform 0.5s, background-color 0.5s;
+    z-index: 1;
 }
 
 .fab-button:hover {
     transform: rotate(360deg); 
-    background-color: #5f4daf 
+    background-color: #8E677E
   }
