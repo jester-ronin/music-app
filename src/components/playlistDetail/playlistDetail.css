@@ -8,8 +8,13 @@ p {
 }
 
 #input {
-    padding-right: 275px;
+    width: 460px;
+
+    @media screen and (max-width: 768px) {
+        width: 340px;
+    }
 }
+
 
 #split-button-dropdown {
     background-color: #b51a2b;

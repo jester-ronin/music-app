@@ -41,13 +41,23 @@ function PlaylistDetail() {
   };
 
   const handleSaveImage = () => {
-    dispatch(setUserPLaylistImage(playlistId, imageUrl));
-    setShowModal(false);
-    setImageUrl('');
+    if (imageUrl === "") {
+      alert("Enter your URL")
+    } else {
+      dispatch(setUserPLaylistImage(playlistId, imageUrl));
+      setShowModal(false);
+      setImageUrl('');
+    }
   };
 
   const handleImageUrlChange = (e) => {
     setImageUrl(e.target.value);
+  };
+
+  const handeDeleteImage = () => {
+    dispatch(setUserPLaylistImage(playlistId, ''))
+    setImageUrl('')
+    setShowModal(false)
   };
 
   return (
@@ -73,7 +83,7 @@ function PlaylistDetail() {
           </SplitButton>
 
           <Button variant="primary" onClick={handleShowModal}>
-          <FontAwesomeIcon icon={faImage}/>
+            <FontAwesomeIcon icon={faImage} />
             Change Playlist Image
           </Button>
 
@@ -83,7 +93,7 @@ function PlaylistDetail() {
             </Modal.Header>
             <Modal.Body>
               <p>Enter the URL of the new image:</p>
-              <input 
+              <input
                 id='input'
                 type="text"
                 value={imageUrl}
@@ -95,7 +105,10 @@ function PlaylistDetail() {
               <Button variant="secondary" onClick={handleCloseModal}>
                 Close
               </Button>
-              <Button variant="primary" onClick={handleSaveImage}>
+              <Button variant="danger" onClick={handeDeleteImage}>
+                Delete image
+              </Button>
+              <Button variant="success" onClick={handleSaveImage}>
                 Save Image
               </Button>
             </Modal.Footer>
