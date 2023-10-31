@@ -18,7 +18,7 @@ function MainPlaylist() {
     const [songTitle, setSongTitle] = useState('');
     const [songYear, setSongYear] = useState('');
     const [songDescription, setSongDescription] = useState('');
-    const [songYoutubeUrl,setSongYoutubeUrl] = useState('')
+    const [songYoutubeUrl, setSongYoutubeUrl] = useState('');
     const [isInvalid, setIsInvalid] = useState(false);
 
 
@@ -26,7 +26,7 @@ function MainPlaylist() {
     const songs = useSelector(selectSongs);
 
     const handleSave = () => {
-        if (!artistName || !songTitle) {
+        if (!artistName && !songTitle) {
             console.log("empty values");
             alert('The artist name and track title must be entered')
             return;
@@ -113,7 +113,7 @@ function MainPlaylist() {
                         className="form-control"
                         placeholder='Enter yotube URL for this song'
                         required
-                        value={songDescription}
+                        value={songYoutubeUrl}
                         onChange={(e) => setSongYoutubeUrl(e.target.value)}
                     />
                 </Modal.Body>

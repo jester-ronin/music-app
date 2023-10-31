@@ -16,7 +16,9 @@ const songReducer = (state = initialState, action) => {
         title: action.payload.title,
         year: action.payload.year,
         description: action.payload.description,
+        youtube: action.payload.youtubeUrl,
       };
+
       return {
         ...state,
         songs: [...state.songs, newSong],
