@@ -18,6 +18,11 @@ function SongsList({ songs, onRemoveSong }) {
                                     <Card.Title>{item.title}</Card.Title>
                                     <Card.Text>Year: {item.year}</Card.Text>
                                     <Card.Text>Description: {item.description}</Card.Text>
+                                    <Card.Text> YouTube: 
+                                        <a href={item.youtube} target="_blank" rel="noopener noreferrer">
+                                            {item.youtube}
+                                        </a>
+                                    </Card.Text>
                                     <button id='trash' onClick={() => onRemoveSong(item.id)}>
                                         <FontAwesomeIcon icon={faTrash} />
                                     </button>

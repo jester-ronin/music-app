@@ -18,6 +18,7 @@ function MainPlaylist() {
     const [songTitle, setSongTitle] = useState('');
     const [songYear, setSongYear] = useState('');
     const [songDescription, setSongDescription] = useState('');
+    const [songYoutubeUrl,setSongYoutubeUrl] = useState('')
     const [isInvalid, setIsInvalid] = useState(false);
 
 
@@ -37,6 +38,7 @@ function MainPlaylist() {
             title: songTitle,
             year: songYear,
             description: songDescription,
+            youtubeUrl: songYoutubeUrl,
         }));
 
         setShowModal(false);
@@ -106,7 +108,14 @@ function MainPlaylist() {
                         value={songDescription}
                         onChange={(e) => setSongDescription(e.target.value)}
                     />
-
+                    <input
+                        type="text"
+                        className="form-control"
+                        placeholder='Enter yotube URL for this song'
+                        required
+                        value={songDescription}
+                        onChange={(e) => setSongYoutubeUrl(e.target.value)}
+                    />
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={() => setShowModal(false)}>

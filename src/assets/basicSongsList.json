@@ -4,70 +4,80 @@
       "artist": "Nirvana",
       "title": "In Bloom",
       "year": 1991,
-      "description": "Song from the album Nevermind"
+      "description": "Song from the album Nevermind",
+      "youtube" : "https://www.youtube.com/watch?v=PbgKEjNBHqM"
     },
     {
       "id": 1,
       "artist": "Blur",
       "title": "Song 2",
       "year": 1997,
-      "description": "Rock song from the album Blur"
+      "description": "Rock song from the album Blur",
+      "youtube" : "https://www.youtube.com/watch?v=SSbBvKaM6sk"
     },
     {
       "id": 2,
       "artist": "Radiohead",
       "title": "Paranoid Android",
       "year": 1997,
-      "description": "Experimental rock song"
+      "description": "Experimental rock song",
+      "youtube" : "https://www.youtube.com/watch?v=fHiGbolFFGw"
     },
     {
       "id": 3,
       "artist": "The Beatles",
       "title": "Hey Jude",
       "year": 1968,
-      "description": "Classic rock anthem"
+      "description": "Classic rock anthem",
+      "youtube" : "https://www.youtube.com/watch?v=A_MjCqQoLLA"
     },
     {
       "id": 4,
       "artist": "Pink Floyd",
       "title": "Comfortably Numb",
       "year": 1979,
-      "description": "Progressive rock masterpiece"
+      "description": "Progressive rock masterpiece",
+      "youtube" : "https://www.youtube.com/watch?v=x-xTttimcNk"
     },
     {
       "id": 5,
       "artist": "Led Zeppelin",
       "title": "Stairway to Heaven",
       "year": 1971,
-      "description": "Epic rock ballad"
+      "description": "Epic rock ballad",
+      "youtube" : "https://www.youtube.com/watch?v=QkF3oxziUI4"
     },
     {
       "id": 6,
       "artist": "Queen",
       "title": "Bohemian Rhapsody",
       "year": 1975,
-      "description": "Operatic rock song"
+      "description": "Operatic rock song",
+      "youtube" : "https://www.youtube.com/watch?v=fJ9rUzIMcZQ"
     },
     {
       "id": 7,
       "artist": "David Bowie",
       "title": "Space Oddity",
       "year": 1969,
-      "description": "Space-themed rock classic"
+      "description": "Space-themed rock classic",
+      "youtube" : "https://www.youtube.com/watch?v=iYYRH4apXDo"
     },
     {
       "id": 8,
       "artist": "The Rolling Stones",
       "title": "Paint It Black",
       "year": 1966,
-      "description": "Rock and roll hit"
+      "description": "Rock and roll hit",
+      "youtube" : "https://www.youtube.com/watch?v=O4irXQhgMqg"
     },
     {
       "id": 9,
       "artist": "The Who",
       "title": "Baba O'Riley",
       "year": 1971,
-      "description": "Rock anthem from Who's Next"
+      "description": "Rock anthem from Who's Next",
+      "youtube" : "https://www.youtube.com/watch?v=x2KRpRMSu4g"
     }
   ]
   
