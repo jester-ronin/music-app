@@ -1,24 +1,25 @@
 # Music Playlist Creator
 
-## Описание:
-Music Playlist Creator - это веб-приложение, разработанное с использованием React, которое позволяет пользователям создавать и управлять своими музыкальными плейлистами. Это интуитивно понятное приложение, предоставляющее удобный интерфейс для добавления, удаления и организации треков в плейлистах.
+## Description
+Music Playlist Creator is a web application developed using React that allows users to create and manage their music playlists. It provides an intuitive interface for adding, deleting, and organizing tracks within playlists.
 
-## Основные функции:
-Создание и редактирование плейлистов: Пользователи могут легко создавать новые плейлисты, добавлять и удалять треки, менять или удалять обложки плейлистов.
+## Key Features
+Create and Edit Playlists: Users can easily create new playlists, add and remove tracks, and modify or delete playlist covers.
 
-## Технологии:
-Frontend: Разработано с использованием React, React-router и Redux 
+## Technologies
+Frontend: Developed using React, React-router, and Redux.
 
+## Screenshots
+![Main Screen](screenshots/main_screen.PNG)
+*Caption: Main screen of the application.*
 
-## Скриншоты
+![Playlist Creation](screenshots/create_playlist.PNG)
+*Caption: Creating a new playlist.*
 
-![Главный экран](screenshots/main_screen.PNG)
-![Создание плейлиста](screenshots/create_playlist.PNG)
-![Добавление трека в плейлист](screenshots/add_song.PNG)
+![Adding Track to Playlist](screenshots/add_song.PNG)
+*Caption: Adding a track to a playlist.*
 
-
-## Как начать
-
-1. Склонируйте репозиторий.
-2. Установите зависимости: npm install.
-3. Запустите проект: npm start.
+## Getting Started
+1. Clone the repository.
+2. Install dependencies: npm install.
+3. Start the project: npm start.
