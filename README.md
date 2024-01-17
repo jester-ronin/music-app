@@ -12,9 +12,9 @@ Frontend: Разработано с использованием React, React-ro
 
 ## Скриншоты
 
-![Главный экран](screenshots/main_screen.png)
-![Создание плейлиста](screenshots/create_playlist.png)
-![Добавление трека в плейлист](screenshots/add_song.png)
+![Главный экран](screenshots/main_screen.PNG)
+![Создание плейлиста](screenshots/create_playlist.PNG)
+![Добавление трека в плейлист](screenshots/add_song.PNG)
 
 
 ## Как начать
