@@ -2,7 +2,7 @@
   "name": "music-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jester-ronin.github.io",
+  "homepage": "https://jester-ronin.github.io/music-app",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
