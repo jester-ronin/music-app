@@ -2,6 +2,7 @@
   "name": "music-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jester-ronin.github.io",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
@@ -19,8 +20,7 @@
     "react-scripts": "^5.0.1",
     "react-transition-group": "^4.4.5",
     "uuid": "^9.0.1",
-    "web-vitals": "^2.1.4",
-    "homepage": "https://jester-ronin.github.io"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
